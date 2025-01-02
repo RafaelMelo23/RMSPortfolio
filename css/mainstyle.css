@@ -80,7 +80,7 @@ nav a:hover {
 
 
 
-/* Home Section Styles */
+
 #home {
     display: flex;
     margin-left: 350px;
@@ -155,6 +155,10 @@ nav a:hover {
 }
 #about {
     background-color: #1c1c1c;
+}
+
+#about span {
+    color: #8b28e8;
 }
 .aboutme {
     margin-left: 50px;
@@ -231,7 +235,7 @@ nav a:hover {
     gap: 20px; /* Espaçamento entre projetos */
 }
 
-.proj1, .proj2, .proj3 {
+.proj1, .proj2, .proj3, .proj4 {
     position: relative;
     width: 300px;
     height: 400px;
@@ -242,7 +246,7 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-.proj1 img, .proj2 img, .proj3 img {
+.proj1 img, .proj2 img, .proj3 img, .proj4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -283,78 +287,78 @@ a img {
     margin-top: 20px;
 }
 
-.proj1:hover, .proj2:hover, .proj3:hover {
+.proj1:hover, .proj2:hover, .proj3:hover, .proj4:hover {
     transform: scale(1.05);
 }
 
-.proj1:hover .layer, .proj2:hover .layer, .proj3:hover .layer {
-    bottom: 0; /* Fundo roxo sobe ao hover */
+.proj1:hover .layer, .proj2:hover .layer, .proj3:hover .layer, .proj4:hover .layer {
+    bottom: 0;
 }
 .layer a img {
 
-    width: 50px; /* Reduzido de 40px para 24px */
-    height: 50px; /* Proporcional */
-    margin-top: 20px; /* Reduz o espaço acima do ícone */
-    transition: transform 0.3s ease; /* Efeito de hover suave */
-    background-color: rgba(70, 8, 70, 0.8); /* Fundo roxo */
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    background-color: rgba(70, 8, 70, 0.8);
     border-radius: 90%;
 
 }
 
 .layer a img:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente o ícone ao passar o mouse */
+    transform: scale(1.1);
 }
 
-.proj1 img, .proj2 img, .proj3 img {
-    width: 100%; /* Largura sempre igual ao contêiner */
-    height: 100%; /* Altura sempre igual ao contêiner */
-    object-fit: cover; /* Ajusta a imagem para preencher sem distorção */
-    border-radius: 10px; /* Mantém bordas arredondadas */
-    transition: transform 0.3s ease; /* Animação suave no hover */
+.proj1 img, .proj2 img, .proj3 img, .proj4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.proj1:hover img, .proj2:hover img, .proj3:hover img {
-    transform: scale(1.05); /* Efeito de zoom suave no hover */
+.proj1:hover img, .proj2:hover img, .proj3:hover img, .proj4:hover img {
+    transform: scale(1.05);
 }
 
 /* Skills Section */
 #skills {
     display: flex;
-    flex-direction: column; /* Alinha os elementos filhos em coluna */
-    align-items: center;    /* Alinha horizontalmente no centro */
-    justify-content: flex-start; /* Mantém o conteúdo no topo */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     padding: 50px 20px;
     background-color: #1c1c1c;
     color: #ffffff;
-    height: auto; /* Ajusta ao conteúdo */
+    height: auto;
 }
 
 #skills h1 {
-    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    margin-bottom: 30px;
     font-size: 2rem;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
 }
 
-/* Grid para organizar as boxes */
+
 #skills .box-container {
-    display: flex; /* Alinha as caixas lado a lado */
-    justify-content: center; /* Centraliza horizontalmente */
-    flex-wrap: wrap; /* Quebra de linha se necessário */
-    gap: 20px; /* Espaço entre as boxes */
-    max-width: 1200px; /* Limita a largura máxima */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
 }
 
 .box {
     width: 300px;
     height: 200px;
     display: flex;
-    flex-direction: column; /* Ícone em cima e título embaixo */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #282828; /* Cor de fundo */
-    color: #c9a6ff; /* Cor do texto e ícones */
+    background-color: #282828;
+    color: #c9a6ff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -365,9 +369,9 @@ a img {
 }
 
 .box img {
-    width: 80px; /* Tamanho do ícone */
+    width: 80px;
     height: 80px;
-    margin-bottom: 10px; /* Espaço entre o ícone e o título */
+    margin-bottom: 10px;
 }
 
 .box h1 {
